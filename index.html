@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link href="font.css" rel="stylesheet">
+  <title>Interior Design</title>
+</head>
+<body>
+    <!-- Strat header hide in lg -->
+    <header class="px-[1rem] py-[0.5rem] bg-red-500 text-white text-2xl lg:hidden fixed top-0 left-0 z-1 block w-full">
+        <a href="javascript:void(0)" class="mr-[1rem] px-[1rem] py-[0.5rem] inline-block hover:text-black hover:bg-stone-300" onclick="openMenu()">☰</a>
+        <span class="inline-block ">Company Name</span>
+    </header>
+    <!-- Strat sidebar menu small screen  -->
+    <nav id="sidebarmenu" class="fixed z-3 top-0 left-0 w-[300px] min-h-screen bg-red-500 text-white px-[1rem] py-[0.5rem] text-lg font-bold hidden animate-sidebar lg:!block">
+        <br>
+        <a href="javascript:void(0)" class="absolute top-0 left-0 w-full inline-block px-[1rem] py-[0.5rem] text-[22px] hover:text-black hover:bg-stone-300  text-center lg:!hidden" onclick="closeMenu()">Close Menu</a>
+
+        <div class="mx-[10px] my-[0.01em]">
+        <div class="my-[10px] py-[4rem]  text-2xl/10"><h3>Company <br>Name</h3></div>
+        </div>
+        <!-- Menu -->
+        <div >
+            <a href="#Home" class="text-lg block w-full hover:text-black hover:bg-white px-[1rem] py-[0.5rem] ">Home</a>
+            <a href="#Showcase" class="text-lg block w-full hover:text-black hover:bg-white px-[1rem] py-[0.5rem] ">Showcase</a>
+            <a href="#Services" class="text-lg block w-full hover:text-black hover:bg-white px-[1rem] py-[0.5rem] ">Services</a>
+            <a href="#Designers" class="text-lg block w-full hover:text-black hover:bg-white px-[1rem] py-[0.5rem] ">Designers</a>
+            <a href="#Packages" class="text-lg block w-full hover:text-black hover:bg-white px-[1rem] py-[0.5rem] ">Packages</a>
+            <a href="#Contact" class="text-lg block w-full hover:text-black hover:bg-white px-[1rem] py-[0.5rem] ">Contact</a>
+        </div>
+    </nav>
+    <!-- background when open sidebar menu and close -->
+    <div id="bg" class="bg-[rgba(0,0,0,0.5)] fixed top-0 left-0 bottom-0 right-0 z-2 cursor-pointer animate-bgshow hidden lg:!hidden" onclick="closeMenu()"></div>
+     <!-- End sidebar menu small screen  -->
+
+<div class=" ml-0 lg:transition-all lg:duration-[400ms] lg:ml-[340px] lg:mr-[40px]">
+        <header class="mt-[80px] py-[0.01em] px-[1rem]">
+            <h1 class="font-bold text-[64px] text-black">Interior Design</h1>
+            <h1 class="font-bold text-5xl text-red-500">Showcase.</h1>
+            <hr class="w-[50px] border-5 border-red-500 rounded-sm my-[20px]">
+        </header>
+
+     <!-- Strat Photo -->
+     <section class="px-[0.5rem] grid sm:grid-cols-2" id="Showcase">
+        
+     <div class="px-[0.5rem] block">
+        <img src="https://www.w3schools.com/w3images/kitchenconcrete.jpg" alt="Concrete meets bricks" class="mt-[1rem] mb-[-6px] cursor-pointer opacity-[0.8] w-full hover:opacity-100" onclick="toggleImg(this)">
+
+        <img src="https://www.w3schools.com/w3images/livingroom.jpg" alt="Light, white and tight scandinavian design" class="mt-[1rem] mb-[-6px] cursor-pointer opacity-[0.8] w-full hover:opacity-100" onclick="toggleImg(this)">
+
+        <img src="https://www.w3schools.com/w3images/diningroom.jpg" alt="White walls with designer chairs" class="mt-[1rem] mb-[-6px] cursor-pointer opacity-[0.8] w-full hover:opacity-100" onclick="toggleImg(this)">
+
+     </div>
+
+     <div class="px-[0.5rem] block">
+        <img src="https://www.w3schools.com/w3images/atrium.jpg" alt="Windows for the atrium" class="mt-[1rem] mb-[-6px] cursor-pointer opacity-[0.8] w-full hover:opacity-100" onclick="toggleImg(this)">
+
+        <img src="https://www.w3schools.com/w3images/bedroom.jpg" alt="Bedroom and office in one space" class="mt-[1rem] mb-[-6px] cursor-pointer opacity-[0.8] w-full hover:opacity-100" onclick="toggleImg(this)">
+
+        <img src="https://www.w3schools.com/w3images/livingroom2.jpg" alt="Scandinavian design" class="mt-[1rem] mb-[-6px] cursor-pointer opacity-[0.8] w-full hover:opacity-100" onclick="toggleImg(this)">
+
+     </div>
+    </section>
+
+
+        <!-- Start Services -->
+        <section class="mt-[4.5rem] px-[1rem] py-[0.01em]" id="Services">
+            <h1 class="font-bold text-red-500 text-5xl">Services.</h1>
+            <hr class="w-[50px] border-5 border-red-500 rounded-sm my-[20px]">
+            <p>We are a interior design service that focus on what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+         </section>
+         <!-- End Srevices -->
+
+         <!-- Strat Design -->
+         <section class="mt-[4.5rem] px-[1rem] py-[0.01em]" id="Designers">
+            <h1 class="font-bold text-red-500 text-5xl">Designers.</h1>
+            <hr class="w-[50px] border-5 border-red-500 rounded-sm my-[20px]">
+            <p>The best team in the world.</p>
+            <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p class="font-bold">Our designers are thoughtfully chosen:</p>
+         </section>
+
+
+        <section class="grid sm:grid-cols-3 grayscale-[75%] px-[0.5rem]" id="">
+            <div class="px-[0.5rem] mb-[1rem] ">
+                <div class="bg-zinc-100">
+                <img src="https://www.w3schools.com/w3images/team2.jpg" alt="" class="w-full align-middle">
+                <div class="py-[0.01em] px-[1rem]">
+                    <h3 class="text-2xl">John Doe</h3>
+                    <p class="opacity-[.60]">CEO & Founder</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                </div>
+            </div>
+            <div class="px-[0.5rem] mb-[1rem] ">
+                <div class="bg-zinc-100">
+                <img src="https://www.w3schools.com/w3images/team1.jpg" alt="" class="w-full align-middle">
+                <div class="py-[0.01em] px-[1rem]">
+                    <h3 class="text-2xl">Jane Doe</h3>
+                    <p class="opacity-[.60]">Designer</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                </div>
+            </div>
+
+            <div class="px-[0.5rem] mb-[1rem] ">
+                <div class="bg-zinc-100">
+                <img src="https://www.w3schools.com/w3images/team3.jpg" alt="" class="w-full align-middle">
+                <div class="py-[0.01em] px-[1rem]">
+                    <h3 class="text-2xl">Mike Ross</h3>
+                    <p class="opacity-[.60]">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                </div>
+                </div>
+            </div>
+
+  </section>
+        <!-- End Design -->
+<!-- Strat packages -->
+        <section class="mt-[4.5rem] px-[1rem] py-[0.01em]" id="Packages">
+            <h1 class="font-bold text-red-500 text-5xl">Packages.</h1>
+            <hr class="w-[50px] border-5 border-red-500 rounded-sm my-[20px]">
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+
+            <div class="grid sm:grid-cols-2 px-[0.5rem]">
+                <div class="px-[0.5rem] mb-[1rem] ">
+                    <ul class="bg-zinc-100 text-center">
+                        <li class="bg-zinc-600 text-2xl text-white px-[1rem] py-[2rem]">Basic</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">Floorplanning</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">10 hours support</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">Photography</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">20% furniture discount</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">Good deals</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300"><h2 class="text-3xl">$ 199</h2><span class="text-black opacity-[0.60] ">per room</span></li>
+                        <li class="px-[1rem] py-[24px]"><button class="bg-white text-black py-[12px] px-[24px] cursor-pointer hover:bg-black hover:text-white">Sign Up</button></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="px-[0.5rem] mb-[1rem] ">
+                    <ul class="bg-zinc-100 text-center">
+                        <li class="bg-red-500 text-2xl text-white px-[1rem] py-[2rem]">Pro</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">Floorplanning</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">50 hours support</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">Photography</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">50% furniture discount</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300">GREAT deals</li>
+                        <li class="p-[1rem] text-black border-b border-zinc-300"><h2 class="text-3xl">$ 249</h2><span class="text-black opacity-[0.60]">per room</span></li>
+                        <li class="px-[1rem] py-[24px]"><button class="bg-red-500 text-white py-[12px] px-[24px] cursor-pointer hover:bg-black">Sign Up</button></li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- End packages -->
+<!-- Strat Contact -->
+        <section class="mt-[4.5rem] px-[1rem] py-[0.01em]" id="Contact">
+            <h1 class="font-bold text-red-500 text-5xl">Contact.</h1>
+            <hr class="w-[50px] border-5 border-red-500 rounded-sm my-[20px]">
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+
+            <form action="#" method="post">
+                <div class="my-[1rem]">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="w-full border-1 border-zinc-300 p-[0.5rem]">
+            </div>
+            <div class="my-[1rem]">
+                <label for="email">Email</label>
+                <input type="text" name="email" class="w-full border-1 border-zinc-300 p-[0.5rem]">
+            </div>
+            <div class="my-[1rem]">
+                <label for="message">Message</label>
+                <input type="text" name="message" class="w-full border-1 border-zinc-300 p-[0.5rem]">
+            </div>
+            <button class="w-full inline-block bg-red-500 text-white cursor-pointer py-[12px] px-[24px] mb-[1rem] hover:text-black hover:bg-stone-300">Send Message</button>
+
+            </form>
+        </section>
+
+<!-- End Contact -->
+</div>
+
+<footer class="mt-[75px] py-[2rem] pr-[58px] pl-[1rem] bg-zinc-100 text-black text-right">
+    <p class="inline-block">Powered by <a href="#" class="underline hover:opacity-[0.60]">w3.css</a></p>
+</footer>
+
+<div id="showimg" class=" bg-black text-white fixed z-4 top-0 left-0 size-full hidden" onclick="this.style.display='none'">
+    <span class="absolute top-0 right-0 text-4xl px-[1rem] py-[0.5rem] cursor-pointer hover:bg-stone-300 hover:text-black" onclick="document.getElementById('showimg').style.display='none'">×</span>
+
+    <div class="container mx-[10px] sm:mx-auto py-[4rem] animate-zoom  max-w-[600px]">
+        <img id="displayimg" src="" alt="" class=" block max-w-full h-auto">
+        <p id="caption" class="text-center"></p>
+    </div>
+
+</div>
+<!-- End Photo  -->
+    <script src="script.js"></script>
+</body>
+</html>

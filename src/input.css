@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+}
+
+@theme {
+    --animate-sidebar: sidebar 0.4s ease-in-out;
+    --animate-bgshow: bgshow 0.4s ease-in-out;
+    --animate-zoom: zoom 0.6s ease-in-out;
+
+    @keyframes sidebar {
+        0% {
+            left: -300px;
+            opacity: 0;
+        }
+        100% {
+            left: 0;
+            opacity: 1;
+        }
+    }
+
+    @keyframes bgshow {
+        0%{
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes zoom {
+        0% {
+            transform:scale(0);
+        }
+        100% {
+            transform:scale(1);
+        }
+    }
+
+}
+
